@@ -59,6 +59,10 @@ a {
   font-weight: bold;
 }
 
+.navbar ul li {
+  padding: 0 15px;
+}
+
 /* Utils */
 .p-0 {
   padding: 0;

@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 footer {
   height: calc(100vh - 250px);
   position: relative;

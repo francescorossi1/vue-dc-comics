@@ -1,33 +1,28 @@
 <template>
   <article class="py-4">
-        <div class="container d-flex">
-          <figure>
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">
-            <span class="px-2">DIGITAL COMICS</span>
-          </figure>
-          <figure>
-            <img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">
-            <span class="px-2">MERCHANDISE</span>
-          </figure>
-          <figure>
-            <img src="../assets/img/buy-comics-subscriptions.png" alt="subscriptions">
-            <span class="px-2">SUBSCRIPTIONS</span>
-          </figure>
-          <figure>
-            <img src="../assets/img/buy-comics-shop-locator.png" alt="shop locator">
-            <span class="px-2">SHOP LOCATOR</span>
-          </figure>
-          <figure>
-            <img src="../assets/img/buy-dc-power-visa.svg" alt="dc power visa">
-            <span class="px-2">DC POWER VISA</span>
-          </figure>
-        </div>
-      </article>
+    <div class="container d-flex">
+      <figure v-for="image in images" :key="image.id">
+        <img :src="image.src" :alt="image.name">
+        <span class="px-2">{{ image.name.toUpperCase() }}</span>
+      </figure>
+    </div>
+  </article>
 </template>
 
 <script>
 export default {
-    name: 'FooterArticle'
+  name: 'FooterArticle',
+  data() {
+    return {
+      images: [
+        { id: 1, src: require("../assets/img/buy-comics-digital-comics.png"), name: "digital comics" },
+        { id: 2, src: require("../assets/img/buy-comics-merchandise.png"), name: "merchandise" },
+        { id: 3, src: require("../assets/img/buy-comics-subscriptions.png"), name: "subscriptions" },
+        { id: 4, src: require("../assets/img/buy-comics-shop-locator.png"), name: "shop locator" },
+        { id: 5, src: require("../assets/img/buy-dc-power-visa.svg"), name: "dc power visa" }
+      ]
+    }
+  }
 }
 </script>
 
@@ -46,7 +41,8 @@ article figure {
   align-items: center;
   flex-basis: 20%;
 }
-article img{
+
+article img {
   max-width: 50px;
   max-height: 50px;
 }
