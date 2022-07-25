@@ -36,15 +36,15 @@ article {
 
 
   figure {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  flex-basis: 20%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
   }
 
   img {
-  max-width: 50px;
-  max-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
   }
 }
 </style>

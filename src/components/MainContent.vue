@@ -1,16 +1,16 @@
 <template>
   <main>
-      <div class="main">
-        <div class="container">
-          <p class="py-5">CONTENT GOES HERE</p>
-        </div>
+    <div class="main">
+      <div class="container">
+        <p class="py-5">CONTENT GOES HERE</p>
       </div>
-    </main>
+    </div>
+  </main>
 </template>
 
 <script>
 export default {
-    name: 'MainContent'
+  name: 'MainContent'
 }
 </script>
 

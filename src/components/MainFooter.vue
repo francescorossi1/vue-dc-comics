@@ -11,12 +11,12 @@ import FooterArticle from './FooterArticle.vue'
 import FooterTop from './FooterTop.vue'
 import FooterBottom from './FooterBottom.vue'
 export default {
-    name: 'MainFooter',
-    components: {
+  name: 'MainFooter',
+  components: {
     FooterArticle,
     FooterTop,
     FooterBottom
-}
+  }
 }
 </script>
 

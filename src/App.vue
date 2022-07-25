@@ -25,7 +25,6 @@ export default {
 @import './assets/sass/style';
 
 
-/* Navbar */
 .navbar {
   height: 100px;
   line-height: 100px;
