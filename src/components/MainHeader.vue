@@ -7,7 +7,7 @@
           </figure>
           <div>
             <ul class="d-flex flex-grow">
-              <li :class="{'active' : active}" v-for="link in headerLinks" :key="link.id"><a href="#">{{link.name}}</a></li>
+              <li :class="{'active' : link.active}" v-for="link in headerLinks" :key="link.id"><a href="#">{{link.name}}</a></li>
             </ul>
           </div>
         </div>
