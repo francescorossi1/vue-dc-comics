@@ -20,9 +20,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
   height: calc(100vh - 250px);
   position: relative;
-  }
+}
 </style>

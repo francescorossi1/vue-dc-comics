@@ -32,27 +32,27 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer-top {
   color: #fff;
-  background-image: url(../assets/img/footer-bg.jpg)
-}
+  background-image: url(../assets/img/footer-bg.jpg);
 
-footer a {
+a {
   color: #6D6A68;
 }
 
 .footer-links,
 .footer-img {
   flex-basis: 30%;
-}
+  }
 
 .footer-links {
   padding-top: 140px;
-}
 
-.footer-links li {
+  li {
   font-size: 12px;
   line-height: 20px;
+  }
+  }
 }
 </style>

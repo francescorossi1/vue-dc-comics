@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer-bottom {
     position: absolute;
     bottom: 0;
@@ -43,14 +43,14 @@ export default {
     right: 0;
     background-color: #303030;
     line-height: 100%;
-}
 
-.footer-bottom ul li {
+    ul li {
     padding: 0 10px;
-}
 
-.footer-bottom li img {
-    vertical-align: middle;
+    img {
+        vertical-align: middle;
+    }
+        }
 }
 
 .blue-border-btn {

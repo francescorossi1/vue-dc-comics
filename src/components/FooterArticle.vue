@@ -26,24 +26,25 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 article {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   background-color: #0282F9;
-}
 
-article figure {
+
+  figure {
   color: #fff;
   display: flex;
   align-items: center;
   flex-basis: 20%;
-}
+  }
 
-article img {
+  img {
   max-width: 50px;
   max-height: 50px;
+  }
 }
 </style>
