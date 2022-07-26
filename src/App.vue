@@ -1,7 +1,7 @@
 <template>
   <div>
     <MainHeader />
-    <MainContent />
+    <MainContent :comics-list="ComicsList"/>
     <MainFooter />
   </div>
 </template>
@@ -10,13 +10,18 @@
 import MainHeader from './components/MainHeader.vue'
 import MainContent from './components/MainContent.vue'
 import MainFooter from './components/MainFooter.vue'
+import ComicsJson from './dc-comics.json'
 
 export default {
   name: 'App',
   components: {
     MainHeader,
     MainContent,
-    MainFooter
+    MainFooter,
+},data(){
+  return {
+    ComicsList: ComicsJson
+  }
 }
 }
 </script>
